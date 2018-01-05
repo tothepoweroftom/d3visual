@@ -4,7 +4,7 @@ form {
     right: 10px;
     top: 10px;
 }
-  
+
 #sequence {
   width: 600px;
   height: 70px;
@@ -24,7 +24,7 @@ form {
 }
 
 #chart path {
-  stroke: #fff;
+  stroke: transparent;
 }
 
 #explanation {
