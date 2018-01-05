@@ -11,56 +11,12 @@
 </head>
 <body>
 <div id="main" class="bgLight">
-
-    <div id="header" class="bgHeader">
-        <a href="index.html" id="backHome"><</a>
-    </div>
-
-    <div id="sidebar">
-        <div id="user">
-            user details
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2 </a></li>
-                <li><a href="#">Logout</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div id="content">
-        <div id="breadcrumb">Level 1 | sub-level<span class="decor green"></span></div>
-        <!-- Your data manipulation should be done inside a bloc, inside a section (where indicate) -->
-        <section>
-            <h1>SECTION WITH 3 BLOCS</h1>
-            <div class="bloc _3blocs">
-                <div id="sequence"></div>
-            </div>
-            <div class="bloc _3blocs">
-                <div id="explanation" style="visibility: hidden;">
-                    <span id="percentage"></span><br/>
-                    of coverage for this element 
-                </div>
-            </div>
-            <div class="bloc _3blocs">
-                <input type="checkbox" id="togglelegend"> Legend<br/>
-                <div id="legend" style="visibility: hidden;"></div>
-            </div>
-        </section>
-        <section>
-            <h1>SECTION WITH 2 BLOCS</h1>
-            <div class="bloc _2blocs">put stuff here</div>
-            <div class="bloc _2blocs">put stuff here</div>
-        </section>
-        <section>
-            <h1>SECTION WITH 1 BLOC</h1>
             <div id="chart" class="bloc">
                 <script type="text/javascript" src="js/sequences.js"></script>
                 <script type="text/javascript">
                 // Hack to make this example display correctly in an iframe on bl.ocks.org
                 // d3.select(self.frameElement).style("height", "700px");
-                </script> 
+                </script>
             </div>
         </section>
     </div>
