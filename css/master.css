@@ -1,0 +1,85 @@
+/* bg colors */
+.bgHeader { background-color: #272A31; }
+.bgDark { background-color: #414550; }
+.bgLight { background-color: #F9F9F9; }
+
+.bgCol1 { background-color:#BB64CA; }
+.bgCol2 { background-color:#7884CD;}
+.bgCol3 { background-color: #6ab975;}
+.bgCol4 { background-color:#E77271; }
+.bgCol5 { background-color:#FFB840; }
+
+
+/* font colors */
+.col1 { color:#BB64CA; }
+.col2 { color:#7884CD; }
+.col3 { color: #6ab975; }
+.col4 { color:#E77271 ;}
+.col5 { color:#FFB840; }
+
+
+.wrapper { position: relative; width:600px; text-align: center; margin:0 auto; }
+
+/* blocs decoration */
+.decor { position:absolute; bottom:1em; display:block; width:40px; height:1px; background-repeat:no-repeat; background-position: left bottom; }
+.decor.orange { background-image: url("../images/line-orange.png"); }
+.decor.green { background-image: url("../images/line-green.png"); }
+
+
+/* fills the viewport - bg color of the screen is applied on that element */
+#main { position: relative; height: 100vh;  font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+
+/* header */
+#header { position: relative; margin:0; height: 50px; background-image: url('../images/arcadis-logo.png'); background-position: center;
+    background-repeat:no-repeat; z-index: 100; }
+a#backHome { position:fixed; left:0.5em; color:#fff; text-decoration: none; font-size:2em; }
+
+/* sidemenu */
+#sidebar { position:fixed; top:0;  height:100vh; color:#fff; background-color: #414550; }
+
+#user { position:relative; margin:4em 1em 1em 1em; font-size:1em; }
+
+#sidebar nav ul { padding:0; margin:5em 0; }
+#sidebar nav ul li { list-style: none; line-height:3em; padding:0; font-size:17px;  }
+#sidebar nav a { display:block; color:#fff; text-decoration: none; padding:0 0 0 1em; }
+#sidebar nav a:hover { background-color: #576071; }
+
+/* content zone (when there is a sidebar) */
+#content { position:relative; }
+
+#breadcrumb { position:relative; color:#6D758C; font-size:0.9em; padding:0 0 1.5em 0;}
+#breadcrumb .decor { left:0;}
+
+/* layouts links for index */
+.template { position: relative; width:240px; height:100px; background-color: #fff; color: #000; float:left; margin:20px;
+text-decoration: none; text-align: left; padding:0 0 1em 0; }
+.template .decor { left:1em;}
+.template h1 { font-size:24px; padding-left:20px; color:#000; }
+.template h2 { font-size: 12px; padding-left:20px; color:#2A2D33; }
+
+/* content blocs */
+#content h1 { font-size:14px; padding-left:0; color:#2A2D33; }
+section { position:relative; clear:both; padding-top:1em; }
+.bloc { position:relative; background-color:#fff; height:100px; }
+._3blocs { float:left; width:32%; margin:0 1.3% 0 0;}
+._2blocs { float:left; width:49%; margin:0 1% 0 0;}
+
+
+/* ipad in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+    #sidebar { width: 200px; }
+    #content { width: 780px; margin:1em auto 0 220px; }
+
+}
+
+/* bigger (desktop) */
+@media only screen
+and (min-device-width : 1025px) {
+
+    #sidebar { min-width: 200px; width: 20%; }
+    #content { min-width: 780px; width: 78%; margin:1em auto 0 21%; }
+}
